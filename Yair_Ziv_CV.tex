@@ -1,0 +1,117 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
+
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[]{mcdowellcv}
+
+% For mathematical symbols
+\usepackage{hyperref}
+\usepackage{xcolor} % Already used for section color
+\hypersetup{
+  colorlinks=true,
+  urlcolor=black,      % Makes hyperlinks blue (you can change this)
+  linkcolor=black,    % For internal links like TOC (not used here)
+  citecolor=black     % For citations (not used here)
+}
+
+
+\linespread{0.95}
+
+% Set applicant's personal data for header
+\name{Yair Ziv}
+\address{Petah Tikva, Israel \linebreak \href{tel:+(972) 52-536-9906}{+(972) 52-536-9906}}
+\contacts{\href{mailto:zivyair06@gmail.com}{zivyair06@gmail.com} \linebreak \href{https://www.linkedin.com/in/yair-ziv}{LinkedIn} \linebreak \href{https://github.com/Yair-Ziv}{GitHub}}
+
+\begin{document}
+
+	% Print the header
+	\makeheader
+	
+	\begin{cvsection}{Profile}
+		Backend engineer with 4+ years of experience building scalable systems in Kotlin and .NET. Known for delivering clean architecture, reliable infrastructure, and production-ready solutions in fast-paced environments. I thrive on ownership, simplifying complexity, and push for impact — in code, teams, and outcomes.
+	\end{cvsection}
+	% Print the content
+	\begin{cvsection}{Professional Experience}
+		\begin{cvsubsection}{Backend Developer}{Xpand}{2024 - Present}
+			\begin{itemize}
+				\item Developed backend adapters for B2B autonomous retail systems; enabling smooth client integration and \linebreak real-time order and product syncing.
+				\item Revamped orchestration service to streamline workflows, improving reliability and simplifying debugging and monitoring.
+				\item Engineered production-grade backend systems in Kotlin (Spring Boot) and C\# (.NET Core), leveraging MQs for real-time operations.
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Software Developer}{Xpand}{2021 – 2023}
+			\begin{itemize}
+				\item Built robotics software in Python and C\#, combining GPU-accelerated OpenCV with real-time control logic.
+				\item Helped evolve a prototype into a stable, production-ready robotics platform.
+				\item Developed backend services using PostgreSQL and .NET, improving reliability and system visibility.
+			\end{itemize}
+		\end{cvsubsection}
+
+		\begin{cvsubsection}{Software Developer Intern}{Check Point Software Technologies}{2018 – 2019}
+			\begin{itemize}
+			  \item Built internal ASP.NET tools backed by MSSQL to streamline issue tracking between support and R\&D, reducing resolution time and improving handoff quality.
+			  \item Created automated dashboards to surface real-time team metrics and support data-driven decisions by \linebreak engineering leads.
+			\end{itemize}
+		  \end{cvsubsection}
+		  
+	\end{cvsection}
+	
+	\begin{cvsection}{Military Service}
+		\begin{cvsubsection}{Shooting Instructor}{IDF}{2019 - 2021}
+			Led the Border Protection Corps’ shooting instructor team as a sergeant, improving marksmanship training standards across the unit. Earned two certificates of excellence for leadership and performance.
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Education}
+		\begin{cvsubsection}{High School Diploma}{Tichonet Alterman}{2012 - 2018}
+			Majored in Computer Science, Physics and Mechanical Control.
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Technical Experience}
+		\begin{cvsubsection}{Software Team Lead}{\href{https://www.firstinspires.org/robotics/frc/what-is-first-robotics-competition}{FIRST Robotics Competition}}{2016 - 2018}	
+			Served as the team’s programming lead, developing real-time control software that achieved top placements in national competitions. Implemented advanced robotics systems using OpenCV for image processing and \linebreak closed-loop control for autonomous navigation and interaction.
+		\end{cvsubsection}
+	\end{cvsection}
+
+	\begin{cvsection}{Additional Courses}
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+				\item \href{https://www.edx.org/cs50}{CS50: Introduction to Computer Science \tiny{ - Harvard University}}
+				\item \href{https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/}{Docker and Kubernetes: The Complete Guide \tiny{ - Stephen Grider}}
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Languages and Technologies}
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+				\item \textbf{Programming Languages:} C\#, Kotlin, Python
+				\item \textbf{Frameworks:} .NET Core, Spring Boot
+				\item \textbf{Technologies:} SQL (PostgreSQL, MySql), NoSql (Redis, MongoDB), MQ (Kafka, ZeroMq), \linebreak Containerization (Docker, Kubernetes), CI/CD (Git, GitHub Actions, Jenkins), Cloud (AWS, Azure)
+				\item \textbf{Languages:} Hebrew - Native, English - Fluent
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+\end{document}
