@@ -51,6 +51,8 @@
 
 % Set document margins
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+\usepackage{ulem}
+\newcommand{\ulhref}[2]{\href{#1}{\uline{#2}}}
 
 % Set font face
 \usepackage{fontspec}
