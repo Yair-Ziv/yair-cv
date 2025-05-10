@@ -77,6 +77,7 @@ Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
 
 % To customize lists
 \usepackage{enumitem}
+\usepackage{xcolor}
 % Remove left margin from lists, suppress vertical item separation and set top
 % separation to a negative value to suppress a single parskip before lists
 \setlist{leftmargin=*, noitemsep, topsep=-1\parskip}
@@ -157,8 +158,9 @@ Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
 
 % Name
 \makeatletter
+\definecolor{darkteal}{RGB}{0, 100, 100}
 
-\newcommand\name[1]{\def\@name{#1}}
+\newcommand\name[1]{\def\@name{\textcolor{darkteal}{#1}}}
 \name{}
 
 \newcommand\printname{
@@ -203,10 +205,10 @@ Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
   \vspace*{\beforesectionheaderspace}
   % Set text margins to equal \tabcolsep (6pt by default)
   \begin{adjustwidth}{\sectionheadermargin}{\sectionheadermargin}
-    \textsc{\textbf{#1}}
+    \textsc{\textcolor{darkteal}{\textbf{#1}}}
   \end{adjustwidth}
   \vspace*{\beforesectionheaderhrulespace}
-  \hrule height \sectionheaderhrlueheight
+  {\color{darkteal}{\hrule height \sectionheaderhrlueheight}}
   \vspace*{\aftersectionheaderspace}
 }{}
 \makeatother
